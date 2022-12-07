@@ -1,0 +1,505 @@
+:root {
+    --bg-color: #2b2b2b !important;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: white !important;
+}
+
+/* Navbar */
+.navbar > .container-fluid > span > a{
+    font-size: 14px !important;
+    color: #d2d2d2 !important;
+}
+
+.navbar-brand {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 27px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white !important;
+
+}
+
+.navbar-nav li a {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px !important;
+    font-weight: 400;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: #fff;
+    transition: width .35s;
+}
+
+.active::after {
+    content: '' !important;
+    display: block !important;
+    width: 100% !important;
+    height: 1px !important;
+    background: #fff !important;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.dropdown-item a {
+    font-size: 16px !important;
+}
+
+.offcanvas {
+    width: 25%;
+    background-color: #000 !important;
+    color: white !important;
+}
+
+.toggle-nav {
+    background-color: var(--bg-color);
+    color: white;
+    padding: 0;
+}
+
+.offcanvas-header button {
+    background-color: #000 !important;
+}
+
+
+
+/* Brief Section */
+.brief {
+    width: 45%;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.brief h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 45px;
+    line-height: 1.4;
+    color: white;
+    letter-spacing: .01em;
+}
+
+
+
+/* Video Page */
+.video-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* Collection Page */
+.img-card {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    height: 450px;
+    background-position: center center !important;
+    background-size: cover !important;
+    cursor: pointer;
+    transition: all .35s ease-in-out;
+    -webkit-transition: all .35s ease-in-out;
+}
+
+.img-card:hover {
+    filter: brightness(80%);
+}
+
+.img-head {
+    font-family: 'Quicksand', sans-serif;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 0.7rem !important;
+}
+
+
+
+
+/* About Page */
+.about-container {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.about-img img {
+    width: 75%;
+}
+
+.about-body {
+    width: 75%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.about-body > div {
+    width: 50%;
+}
+
+.about-body h3 {
+    font-size: 30px;
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+    fill: #ffffff;
+    letter-spacing: .01em;
+    width: 45%;
+}
+
+.about-body h5 {
+    width: 100%;
+    color: #f2f2f2;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8em;
+    letter-spacing: 0em;
+}
+
+.about-container button {
+    border-radius: 0;
+    padding: 1rem 1.5rem;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #dd0000 !important;
+    width: 25%;
+}
+
+.about-container button:hover {
+    background-color: #b90909 !important;
+}
+
+
+
+/* Contact Page */
+.contact-container {
+    /* margin-left: 20rem; */
+    margin-top: 3.5rem;
+    margin-bottom: 2rem;
+    padding: 0 5rem;
+}
+
+.contact-head h1 {
+    font-size: 45px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #fff;
+    line-height: 1.3;
+    fill: #fff;
+}
+
+.contact-head p {
+    width: 45%;
+    color: #fff;
+    font-family: Nunito, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8em;
+    letter-spacing: 0em;
+}
+
+.contact-body {
+    margin-left: 5.5rem;
+    margin-top: 8rem;
+}
+
+.contact-body-head {
+    width: 45% !important;
+}
+
+.contact-body-head h1 {
+    font-size: 45px;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    line-height: 1.3;
+    fill: #fff;
+    letter-spacing: .01em;
+}
+
+.contact-body-head p {
+    width: 100%;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8em;
+    letter-spacing: 0em;
+    margin-top: 1rem;
+}
+
+.contact-form {
+    width: 65%;
+    padding: 0 6rem;
+}
+
+.contact-form input, textarea {
+    border-radius: 0 !important;
+    padding: 0.5rem 0.5rem;
+}
+
+.contact-form label {
+    font-family: 'Quicksand', sans-serif;
+    color: #fff;
+    fill: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8em;
+    letter-spacing: 0em;
+}
+
+.contact-form button {
+    border-radius: 0 !important;
+    background-color: #dd0000;
+    padding: 1rem 2rem !important;
+}
+
+.contact-form button:hover {
+    background-color: #b90909;
+}
+
+
+
+/* Exhibit Page */
+.carousel-item {
+    height: 100vh;
+    min-height: 100%;
+    background: no-repeat center center scroll;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 50%;
+    opacity: 0 !important;
+}
+
+
+
+/* Footer */
+footer div a {
+    color: #d2d2d2;
+}
+
+footer div a i {
+    font-size: 1rem;
+    color: #d2d2d2;
+}
+
+.copyright-text {
+    font-size: 15px;
+    color: #d2d2d2;
+}
+
+
+
+
+
+@media (max-width: 992px) {
+    .about-body h3 {
+        width: 100%;
+    }
+
+    .about-body > div {
+        width: 100%;
+    }
+
+    .contact-head p {
+        width: 95%;
+    }
+
+    .contact-body {
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+
+    .contact-body-head {
+        width: 100% !important;
+    }
+
+    .contact-form {
+        width: 100% !important;
+        padding: 0 0;
+    }
+
+    .contact-form input, .contact-form textarea {
+        width: 90%;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 21px;
+    }
+
+    .offcanvas {
+        width: 100%;
+    }
+
+    .offcanvas-body {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .offcanvas-body li a{
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+
+    .navbar-nav {
+        padding-top: 6rem !important;
+    }
+
+    .navbar-nav i {
+        display: none;
+    }
+
+    .brief {
+        width: 90%;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+    
+    .brief h3 {
+        font-size: 34px;
+    }
+
+    /* Video Section */
+    .video-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+
+    .about-container button {
+        border-radius: 0;
+        padding: 1rem 1.5rem;
+        font-family: 'Quicksand', sans-serif;
+        background-color: #dd0000 !important;
+        width: 35%;
+    }
+
+    /* Contact Page */
+    .contact-container {
+        margin-left: 0;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 1rem !important;
+    }
+
+    .contact-head h1 {
+        font-size: 35px;
+    }
+    
+    .contact-head p {
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    .contact-body-head h1 {
+        font-size: 35px;
+    }
+
+    .contact-body-head p {
+        font-size: 14px;
+    }
+    
+    .contact-form input, .contact-form textarea {
+        width: 100%;
+    }
+
+    .carousel-item {
+        height: 90vh;
+    }
+}
+
+
+
+@media (max-width: 576px) {
+    .brief {
+        width: 90%;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .about-container button {
+        border-radius: 0;
+        padding: 1rem 1.5rem;
+        font-family: 'Quicksand', sans-serif;
+        background-color: #dd0000 !important;
+        width: 45%;
+    }
+
+    .about-img img {
+        width: 95%;
+    }
+
+    .about-body {
+        width: 95%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    /* Contact Page */
+    .contact-container {
+        margin-top: 0;
+    }
+
+    .contact-head h3 {
+        font-size: 25px;
+    }
+
+    .contact-head h5 {
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+        color: #474747;
+        line-height: 30px;
+        width: 80%;
+    }
+
+    .contact-input {
+        margin-top: 4rem;
+        width: 90%;
+    }
+}
+
+
+
+
+
+/* Utils */
+
+@media (min-width: 768px) {
+    .px-md-4 {
+        padding-right: 2.5rem!important;
+        padding-left: 2.5rem!important;
+    }
+
+    .mx-md-4 {
+        padding-right: 2.5rem!important;
+        padding-left: 2.5rem!important;
+    }
+}
